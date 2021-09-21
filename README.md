@@ -5,7 +5,7 @@ Enables the user to borrow any token and repay using any other token.
 Abstracts away most of the nitty-gritty details of the UniswapV2 core contracts.
 
 ## How to use
-1. Deploy the FlashSwapContract the parameters to Constructor are two addresses. _WETH and _DAI are the parameters which are addresses of WETH and DAI token on respective network.
+1. Deploy the FlashSwapContract the parameters to Constructor are two addresses. _WETH, _DAI and UniswapFactory are the parameters which are addresses of WETH, DAI and UniswapV2Factory on respective network.
 2. You need some tokens in the contract before executing a flash swap. You can do this by simply sending the token from the wallet to the address of contract. In order to understand how much balance is required, please check fees section.
 3. In order to execute a Flash Swap, call the flashSwap() function. The parameters of this function are:
 - _tokenBorrow The address of the token you want to flash-borrow, use 0x0000000000000000000000000000000000000000 for ETH.  
